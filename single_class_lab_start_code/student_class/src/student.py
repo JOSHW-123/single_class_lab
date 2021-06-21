@@ -3,6 +3,12 @@ class Student:
         self.name = input_name
         self.cohort = input_cohort
 
-    def student_has_cohort(input_cohort):
-        return input_cohort("name")
+    def test_student_has_name(self, input_name):
+        self.name == input_name
+
+    def test_student_has_cohort(self, input_cohort):
+        self.cohort == input_cohort
+
+    def test_student_can_update_name(self, input_name):
+        self.name == input_name
         
