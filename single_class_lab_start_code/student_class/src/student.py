@@ -11,4 +11,9 @@ class Student:
 
     def test_student_can_update_name(self, input_name):
         self.name == input_name
-        
+
+    def test_student_can_change_cohort(self, input_cohort):
+        self.cohort = input_cohort
+
+    def test_student_can_talk(self):
+        self.assertEqual("I can talk!", self.student.talk())
