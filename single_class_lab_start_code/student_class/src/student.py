@@ -2,6 +2,9 @@ class Student:
     def __init__(self, input_name, input_cohort):
         self.name = input_name
         self.cohort = input_cohort
+        
+        
+        
 
     def test_student_has_name(self, input_name):
         self.name == input_name
@@ -16,4 +19,4 @@ class Student:
         self.cohort = input_cohort
 
     def test_student_can_talk(self):
-        self.assertEqual("I can talk!", self.student.talk())
+        return "I can talk!"
